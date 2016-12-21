@@ -241,6 +241,7 @@
 		FD13548B1AF6696D0044A104 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1354861AF6696D0044A104 /* SVIndefiniteAnimatedView.m */; };
 		FD13548C1AF6696D0044A104 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD1354881AF6696D0044A104 /* SVProgressHUD.bundle */; };
 		FD13548D1AF6696D0044A104 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD13548A1AF6696D0044A104 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FD23AA831E0A64E7004F5571 /* itune.png in Resources */ = {isa = PBXBuildFile; fileRef = FD23AA821E0A64E7004F5571 /* itune.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -650,6 +651,7 @@
 		FD1354881AF6696D0044A104 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		FD1354891AF6696D0044A104 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		FD13548A1AF6696D0044A104 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		FD23AA821E0A64E7004F5571 /* itune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itune.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -790,6 +792,7 @@
 		35DB9E6315D4B19F0080E1C8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FD23AA821E0A64E7004F5571 /* itune.png */,
 				354AAE3915DDFCF2007D4F14 /* fps_images-hd.png */,
 				354AAE3A15DDFCF2007D4F14 /* fps_images-ipadhd.png */,
 				354AAE3B15DDFCF2007D4F14 /* fps_images.png */,
@@ -1434,6 +1437,7 @@
 				35DBA01615D4B2F10080E1C8 /* home-hd.png in Resources */,
 				BEBBC8341ADCBBE50014BDBE /* Default-568h.png in Resources */,
 				BEBBC80C1ADCA1A50014BDBE /* tile.png in Resources */,
+				FD23AA831E0A64E7004F5571 /* itune.png in Resources */,
 				35DBA01715D4B2F10080E1C8 /* home.png in Resources */,
 				35DBA01815D4B2F10080E1C8 /* home2-hd.png in Resources */,
 				35DBA01915D4B2F10080E1C8 /* home2.png in Resources */,
