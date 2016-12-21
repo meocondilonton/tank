@@ -1,0 +1,40 @@
+//
+// Prefix header for all source files of the 'Test' target in the 'Test' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#define APP_DELEGATE                          ((AppController *)[[UIApplication sharedApplication] delegate])
+#define ADMOB_FULLSCREEN_KEY                   @"ca-app-pub-5869820531988531/5177375002"
+#define ADMOB_KEY                              @"ca-app-pub-5869820531988531/4898173406"
+
+#define STARTADD_APP_ID                        @"204815703"
+#define STARTADD_ACCOUNT_ID                    @"103048522"
+
+#define PARSE_APP_ID                           @"zUQdQXUePCZ263aGXYTZC2azeM3QaIJzsY7aEspF"
+#define PARSE_CLIENT_ID                        @"ZeTZh5e1WQMdO5bikuiCKn4jD1PbaL1sAJqdlQYJ"
+
+#define PARSE_APP_LANGUAGE                   @"Eng"
+#define PARSE_CLASS_NEW_APP                  @"NewApp"
+
+
+#define GG_TRACK_ID                            @"UA-56386424-9"
+#define APP_APPLE_ID              985484921
+
+#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
