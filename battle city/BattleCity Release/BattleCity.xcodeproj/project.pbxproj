@@ -1382,7 +1382,8 @@
 				LastUpgradeCheck = 0430;
 				TargetAttributes = {
 					35DB9E4B15D4B19F0080E1C8 = {
-						DevelopmentTeam = QA84AQQV8V;
+						DevelopmentTeam = ZTA488SNYR;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1689,8 +1690,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: nguyen long (QA84AQQV8V)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: nguyen long (QA84AQQV8V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = ZTA488SNYR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BattleCity",
@@ -1701,7 +1703,7 @@
 				GCC_PREFIX_HEADER = BattleCity/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"BattleCity/libs/kazmath/include\"";
 				INFOPLIST_FILE = BattleCity/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BattleCity/Library",
@@ -1710,8 +1712,10 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenphilong.BattleCity1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1f12fd64-76ca-4cab-a26c-26cc3be2cf46";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1723,8 +1727,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: nguyen long (QA84AQQV8V)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: nguyen long (QA84AQQV8V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = ZTA488SNYR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BattleCity",
@@ -1734,7 +1739,7 @@
 				GCC_PREFIX_HEADER = BattleCity/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"BattleCity/libs/kazmath/include\"";
 				INFOPLIST_FILE = BattleCity/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BattleCity/Library",
@@ -1743,8 +1748,10 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenphilong.BattleCity1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1f12fd64-76ca-4cab-a26c-26cc3be2cf46";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
