@@ -47,19 +47,19 @@
     CCMenuItemFont* item1 = [CCMenuItemFont itemWithString:@"Start Game" target:self selector:@selector(menuItem1Touch:)];
     item1.position = ccp(0,-50);
 
-    CCMenuItemFont* item2 = [CCMenuItemFont itemWithString:@"More App" target:self selector:@selector(menuItem2Touch:)];
-    item2.position = ccp(0,-100);
+//    CCMenuItemFont* item2 = [CCMenuItemFont itemWithString:@"More App" target:self selector:@selector(menuItem2Touch:)];
+//    item2.position = ccp(0,-100);
 
     CCMenuItemImage* item3 = [CCMenuItemImage itemWithNormalImage:@"BattleCity.png" selectedImage:nil];
     item3.position = ccp(0,50);
     
     if (SYSTEM_VERSION_LESS_THAN(@"8.0")) {
         item1.position = ccp(0,200);
-        item2.position = ccp(0,150);
+//        item2.position = ccp(0,150);
         item3.position = ccp(0,300);
         if (isPad) {
             item1.position = ccp(0,500);
-            item2.position = ccp(0,450);
+//            item2.position = ccp(0,450);
             item3.position = ccp(0,600);
 
         }
@@ -67,7 +67,7 @@
     
     
 
-    CCMenu* menu = [CCMenu menuWithItems:item1,item2,item3, nil];
+    CCMenu* menu = [CCMenu menuWithItems:item1,item3, nil];
     
   
     [self addChild:menu];

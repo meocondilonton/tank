@@ -13,6 +13,7 @@
 #import "ScoreScene.h"
 #import "SimpleAudioEngine.h"
 
+
 @interface MapLayer(PrivateMethods)
 
 - (void)initAIPlistFile;
@@ -30,7 +31,7 @@
     
     self = [super initWithColor:ccc4(0, 0, 0, 255)];
     if ( self != nil ) {
-        
+        float spacing = 80;
         _leve = leve;
         _winSize = [[CCDirector sharedDirector] winSize];
         
@@ -39,14 +40,21 @@
 
  
 
-        float big = (_winSize.height )/_map.contentSize.height;
-        _map.scale = big;
+//        float big = (_winSize.height )/_map.contentSize.height;
+//        _map.scale = big;
+        
+        float scaleHeight = (_winSize.height )/_map.contentSize.height;
+        _map.scaleY = scaleHeight;
+        float scaleWidth = (_winSize.width - spacing * 2 )/_map.contentSize.width;
+        _map.scaleX = scaleWidth;
 
 
         _bg1Layer = [_map layerNamed:@"bg1"];
         _bg2Layer = [_map layerNamed:@"bg2"];
         _bg2Layer.visible = NO;//将层2隐藏
         
+        NSLog(@"width : %f",_winSize.width);
+          NSLog(@"height : %f",_winSize.height);
 
         _objects = [_map objectGroupNamed:@"objects"];
         
@@ -62,8 +70,9 @@
         [_map addChild:_home z:-1];
         
 
-        [self changeWidth:_winSize.height height:_winSize.height];
-        self.position = ccp(_winSize.width/6,0);
+//        [self changeWidth:_winSize.height height:_winSize.height];
+         [self changeWidth:_winSize.width - spacing * 2 height:_winSize.height  ];
+        self.position = ccp( spacing ,0);
         [self addChild:_map];
         
         
